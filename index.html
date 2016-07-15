@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="core">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>CNK Solutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--
+		Perform your cuts the mustard test.
+	-->
+	<script>
+		var cutsTheMustard = ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window);
+
+		if (cutsTheMustard) {
+			// Swap the `core` class on the HTML element for an `enhanced` one
+			// We're doing it early in the head to avoid a flash of unstyled content
+			document.documentElement.className = document.documentElement.className.replace(/\bcore\b/g, 'enhanced');
+		}
+	</script>
+
+	<!--
+		Hide any enhanced experience content when in core mode, and vice versa.
+		Add any other inlined CSS here
+	-->
+	<style>
+		.core .o--if-js,
+		.enhanced .o--if-no-js { display: none !important; }
+	</style>
+	  <link rel="stylesheet" href="https://origami-build.ft.com/v2/bundles/css?modules=o-hierarchical-nav@4.0.0:/demos/src/scss/demo.scss,o-fonts@^1.4.0">
+
+	<link rel="stylesheet" href="./public/bundle.css" />
+	<script type="text/javascript" href="./js/header.css"></script>
+	<style>
+		/* Add any inline CSS here */
+
+	</style>
+
+	<script src="public/bundle.js"></script>
+
+	<!--
+		Load the main JavaScript bundle asynchronously
+	-->
+	<script>
+		(function(src) {
+			if (cutsTheMustard) {
+				var o = document.createElement('script');
+				o.async = o.defer = true;
+				o.src = src;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(o, s);
+			}
+		}('public/bundle.js'));
+	</script>
+</head>
+<body>
+<nav class="o-hierarchical-nav demo--horizontal-theme" data-o-component="o-hierarchical-nav">
+    <center><img src="./images/cnklogo2.png" alt="logo" > <a name="home"></a></center>
+    <ul data-o-hierarchical-nav-level="1">
+        <li data-priority="2" aria-selected="true"><a href="#Section1">Section 1</a></p>
+        <li data-priority="3"><a href="#Section2">Section 2</a></p>
+        <li data-priority="1" class="o-hierarchical-nav__parent" data-o-hierarchical-nav-is-cloneable=""><a>Section 3  <i></i></a>
+        <ul data-o-hierarchical-nav-level="2">
+            <li><a href="#Section3">Section 3.1</a></li>
+            <li><a href="#Section3">Section 3.2</a></li>
+            <li><a href="#Section3">Section 3.3</a></li>
+            <li><a href="#Section3">Section 3.4</a></li>            
+            <li data-more="" class="o-hierarchical-nav__parent" aria-hidden="true"><a><span class="o-hierarchical-nav__more--if-some">More</span><span class="o-hierarchical-nav__more--if-all">Menu</span> <i></i></a></li>
+        </ul>
+    </ul>    
+</nav>
+     <script src="https://origami-build.ft.com/v2/bundles/js?modules=o-hierarchical-nav@4.0.0:/demos/src/responsive-nav.js,o-fonts@^1.4.0"></script>
+    <script src="https://registry.origami.ft.com/embedapi?autoload=resize"></script>
+<!--
+	Start Header
+
+<header class="o-header" data-o-component="o-header" data-o-header--no-js="">
+	<nav class="o-hierarchical-nav demo--horizontal-theme" data-o-component="o-hierarchical-nav">
+		<center><img src="./images/cnklogo2.png" alt="logo" > <a name="home"></a></center>
+		<ul data-o-hierarchical-nav-level="1">
+		    <li data-priority="2" aria-selected="true"><a href="#Section1">Section 1</a>
+		    </li>
+		    <li data-priority="3"><a href="#Section2">Section 2</a>
+		    </li>
+		    <li data-priority="1" class="o-hierarchical-nav__parent" data-o-hierarchical-nav-is-cloneable=""><a>Section 3 </a>
+		    </li>
+		    <ul data-o-hierarchical-nav-level="2">
+		        <li><a href="#Section3">Section 3.1</a>
+		        </li>
+		        <li><a href="#Section3">Section 3.2</a>
+		        </li>
+		        <li><a href="#Section3">Section 3.3</a>
+		        </li>
+		        <li><a href="#Section3">Section 3.4</a>
+		        </li>            
+		   </ul>
+		</ul>
+	</nav>
+</header>
+-->
+<!--
+    	End Header
+-->
+<!--
+	Start Section 1
+-->
+<div class="o-grid-container">
+    <div class="o-grid-row">
+    	<h2 class="o-typography-body">Exercise for the vacancy at CNK Solutions.</h2>	
+        <!-- two divs, spanning a total of 12 columns -->
+        <div data-o-grid-colspan="8">
+            <p class="o-typography-body">Firstly I would like to thank you for your interest in my profile for the position of front-end developer at CNK Digital Solutions Ltd.
+            I have completed the front end development exercise given and would like to mention that using Origami was a new experience for me.I was able to quickly become familiar with the tool.</p></div>
+        <div data-o-grid-colspan="4"><img src="./images/origami_logo.png" alt="foto origami logo"></div>
+    </div>
+</div>
+<!--
+	End Section 1
+-->
+ <!--
+        Start Section 2    
+    -->
+    <section id="home" data-speed="4" data-type="background">
+        <div class="o-grid-container">
+            <div class="o-grid-row" >
+                <div data-o-grid-colspan="6 L12" class="first-column">
+                    <div class="well">
+                        <div class="o-typography-flyline">
+                            <a class="o-typography-flyline__link name="Section1" href="https://es.linkedin.com/in/castillafrancisco" target="_blank">Francisco Castilla</a>
+                        </div>
+                        <h2 class="o-typography-heading1">A brief sumary about myself</h1>
+                        <p class="o-typography-lead">Introduction</p>
+                        <div class="demo-article__body">
+                            <p class="o-typography-body">A dedicated, team player with more than 10 years of experience in the areas of hospitality and IT. The last approximately 2 years have been in Web development and System Administration, and most recently in cybersecurity.
+                            </p>
+
+                            <p class="o-typography-body">Passionate for developing responsive front end applications and highly skilled in cross-platform development using JAVA, PHP, MySQL, HTML5, JavaScript, CSS3, Ajax, jQuery, technologies.
+                                Using differents frameworks as Laravel for Php or Bootstrap, Angular on CSS
+                            </p>
+
+                            <p class="o-typography-body">Highly capable of working on own initiative and as part of a team, with demonstrated ability to think creatively, build smart algorithms and resolve challenges in tight deadline driven environments.
+                            </p>
+
+                            <p class="o-typography-body">Proven organizational, customer service and leadership skills gained throughout my international work experience in hospitality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="o-grid-row" name="Section2">
+                    <div data-o-grid-colspan="6 L12">
+                        <a name="Section2" class="o-typography-flyline__link name="><h2 class="o-typography-heading2">Life in Barcelona</h2></a>
+                    </div>
+                    <div data-o-grid-colspan="6 L6" class="second-column">
+                        <div class="well">
+                            <a class="o-typography-flyline__link name="Section1" href="http://www.fanfiportfolio.altervista.org/">Porfolio</a>
+                            <div class="demo-article__body">
+                                <p class="o-typography-body">I recently moved back to Barcelona after living and working many years abroad, of which 6 years were in London and 2 years in Amsterdam.</p>
+
+                                <p class="o-typography-body"> Gained great exposure in other cultures and experience from travelling and working outside of Spain and now that I have returned to my home country I am seeking to expand my technical skills and apply my knowledge in a development role. For this reason I have applied for this position at CNK, as I find it a very interesting creative company to work for. I would very much appreciate to be considered for an interview, so that we can meet in person and discuss more about my experience and what I can offer at CNK.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    <div data-o-grid-colspan="6 L6" class="second-column"> 
+                        <div class="well">   
+                            <img alt="bcn" src="./images/bcn3.png">
+                            <figcaption class="o-typography-caption">
+                                <span class="o-typography-link" href="#void">&#xA9;BCN 2016</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>   
+                <div class="o-grid-row"> 
+                    <div data-o-grid-colspan="6 L12">
+                        <a name="Section3" class="o-typography-flyline"><h2 class="o-typography-heading2">IT Skills</h2>
+                        </a>
+                    </div>
+                    <div data-o-grid-colspan="6 L3" class="second-column">    
+                        <div class="well">
+                           <h3>Front-end</h3>
+                           <p class="o-typography-body">Html 5</p>
+                           <p class="o-typography-body">CSS3</p>
+                           <p class="o-typography-body">JavaScript</p>
+                           <p class="o-typography-body">Jquery</p>
+                           <p class="o-typography-body">Angular</p>   
+                       </div>
+                   </div>
+                   <div data-o-grid-colspan="6 L3" class="second-column"> 
+                       <div class="well">
+                        <h3>Back-end</h3>
+                        <p class="o-typography-body">Php</p>
+                        <p class="o-typography-body">Python</p>
+                        <p class="o-typography-body">Java</p>
+                        <p class="o-typography-body">MySQL</p>
+                        <p class="o-typography-body">MongoDb</p> 
+                    </div>      
+                </div>
+                <div data-o-grid-colspan="6 L3" class="second-column">
+                    <div class="well">
+                        <h3 >Frameworks and CMS</h3> 
+                        <p class="o-typography-body">Laravel</p>
+                        <p class="o-typography-body">Angular</p>
+                        <p class="o-typography-body">Bootstrap</p>
+                        <p class="o-typography-body">Blooger</p>
+                        <p class="o-typography-body">Wordpress</p>
+                        <p class="o-typography-body">Prestashop</p> 
+                    </div>
+                </div>
+                <div data-o-grid-colspan="6 L3" class="second-column"> 
+                    <div class="well">
+                     <h3 >System administration and Security</h3> 
+                     <p class="o-typography-body">Linux (Ubuntu, Debian)</p>
+                     <p class="o-typography-body">Windows (Desktop, Server)</p>
+                     <p class="o-typography-body">IT security analist</p>
+                     <p class="o-typography-body">Software analist</p>
+                 </div>
+             </div>
+         </div>    
+     </div>
+ </div>
+</section>
+    <!--
+       End Section 2 
+   -->
+   <!--
+        Start Footer
+    -->
+    <section id="about" data-speed="2" data-type="background">
+        <footer class="o-footer o-footer--theme-light" data-o-component="o-footer">
+            <div class="o-footer__container">
+                <div class="o-footer__row o-footer__copyright">
+                    <div class="o-footer__col o-footer__col--full-width">
+                        <span>&#xA9; Fanfi Developments</span>
+                    </div>
+                </div>
+            </div>
+            <div class="o-footer__brand">
+                <div class="o-footer__container">
+                    <div class="o-footer__row">
+                        <div class="o-footer__col o-footer__col--full-width">
+                            <div class="o-footer__brand-logo" aria-label="A Bonsay Company">                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://origami-build.ft.com/v2/bundles/js?modules=o-fonts@^1.4.0"></script>
+    <script src="https://registry.origami.ft.com/embedapi?autoload=resize"></script>
+    <script src="https://origami-build.ft.com/v2/bundles/js?modules=o-fonts%40%5E1.4.0"></script>
+    <!--
+        End Footer
+    -->
+</body>
+</html>
+
